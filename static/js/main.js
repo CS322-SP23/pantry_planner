@@ -6,7 +6,7 @@ var sidebar_settings = document.getElementById("settings");
 var sidebar_shopping_list = document.getElementById("shopping_list");
 
 
-import { firebase } from '@firebase/app'
+//import { firebase } from '@firebase/app'
 
 const firebaseConfig = {
   apiKey: "AIzaSyB2DuI-rqRSZYiiEzvBasH4CUeppxX_FoY",
@@ -20,7 +20,7 @@ const firebaseConfig = {
 };
 
 firebase.intializeApp(firebaseConfig);
-var foodListDB = firebaseConfig.databaseURL().ref('foodList');
+var foodListDB = firebase.databaseURL().ref('foodList');
 
 const saveFood = (name, expDate) => {
   var newFood = foodListDB.push();
