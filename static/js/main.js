@@ -42,6 +42,8 @@ function addItemExp() {
         listItem.appendChild(itemHeading);
         listItem.appendChild(expPara);
         list.appendChild(listItem);
+
+        saveFood(item, exp);
       }
 
 function addItemShop() {

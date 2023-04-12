@@ -11,3 +11,12 @@ const firebaseConfig = {
 
   firebaseConfig.intializeApp(firebaseConfig);
 var foodListDB = firebaseConfig.databaseURL().ref('foodList');
+
+const saveFood = (name, expDate) => {
+    var newFood = foodListDB.push();
+
+    newFood.set({
+        food : food,
+        expDate : expDate,
+    })
+}
