@@ -6,7 +6,7 @@ var sidebar_settings = document.getElementById("settings");
 var sidebar_shopping_list = document.getElementById("shopping_list");
 
 
-//import { firebase } from '@firebase/app'
+import firebase from './firebase';
 
 const firebaseConfig = {
   apiKey: "AIzaSyB2DuI-rqRSZYiiEzvBasH4CUeppxX_FoY",
